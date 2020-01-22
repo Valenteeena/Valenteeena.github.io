@@ -25,14 +25,109 @@ body {
     margin-right: auto;
 }
 
-@media only screen and (min-width: 1440px) {
+#side1 {
+    width: 35%;
+    float: left;
+    padding-left: 145px;
+    padding-right: 181px;
+    padding-top: 50px;
+    background: url("images/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-size: cover;
+    height: 745px;
+}
+
+#side1 img {
+    margin-bottom: 100px;
+    height: 30px;
+}
+
+.light {
+    font-weight: 300;
+    font-size: 4em;
+    color: hsl(0, 36%, 70%);
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+
+.dark {
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-size: 4em;
+    font-weight: 600;
+    color: hsl(0, 6%, 24%);
+}
+
+#side1 p {
+    margin-top: 30px;
+    color: hsl(0, 36%, 70%);
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    width: 450px;
+    margin-bottom: 50px;
+}
+
+#container {
+    margin: auto;
+}
+
+#side2 {
+    float: left;
+    background: url("images/hero-desktop.jpg");
+    height: 800px;
+    width: 42%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+FOOTER {
+    clear: both;
+}
+
+input[type="email"] {
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 50px;
+    color: hsl(0, 6%, 24%);
+}
+
+ ::placeholder {
+    color: hsl(0, 36%, 70%);
+    ;
+    opacity: 0.5;
+}
+
+#errmsg {
+    color: hsl(0, 93%, 68%);
+    padding-top: 20px;
+    font-size: 15px;
+    padding-left: 20px;
+    font-weight: 100;
+}
+
+button {
+    padding: 18px;
+    font-size: 20px;
+    background-color: hsl(0, 93%, 68%);
+    color: white;
+    border: none;
+    font-weight: 300;
+    border-radius: 50px;
+    width: 100px;
+    margin-left: -80px;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+@media only screen and (max-width: 1440px) {
     #side1 {
         width: 35%;
         float: left;
         padding-left: 145px;
         padding-right: 181px;
         padding-top: 50px;
-        background: url("img/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+        background: url("images/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
         background-size: cover;
         height: 745px;
     }
@@ -68,7 +163,7 @@ body {
     }
     #side2 {
         float: left;
-        background: url("img/hero-desktop.jpg");
+        background: url("images/hero-desktop.jpg");
         height: 800px;
         width: 42%;
         background-repeat: no-repeat;
@@ -116,7 +211,7 @@ body {
         position: absolute;
         clear: both;
         top: 80px;
-        background: url("img/hero-desktop.jpg");
+        background: url("images/hero-desktop.jpg");
         height: 250px;
         width: 100%;
         background-repeat: no-repeat;
@@ -128,7 +223,7 @@ body {
         padding-right: 0px;
         padding-top: 30px;
         width: 100%;
-        background: url("img/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+        background: url("images/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
         background-size: cover;
         text-align: center;
     }
