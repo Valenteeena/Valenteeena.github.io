@@ -19,6 +19,12 @@ body {
     padding: 0
 }
 
+#container {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media only screen and (max-width: 1440px) {
     #side1 {
         width: 35%;
