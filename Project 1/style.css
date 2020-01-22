@@ -32,7 +32,7 @@ body {
         padding-left: 145px;
         padding-right: 181px;
         padding-top: 50px;
-        background: url("images/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+        background: url("img/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
         background-size: cover;
         height: 745px;
     }
@@ -68,7 +68,7 @@ body {
     }
     #side2 {
         float: left;
-        background: url("images/hero-desktop.jpg");
+        background: url("img/hero-desktop.jpg");
         height: 800px;
         width: 42%;
         background-repeat: no-repeat;
@@ -116,7 +116,7 @@ body {
         position: absolute;
         clear: both;
         top: 80px;
-        background: url("images/hero-desktop.jpg");
+        background: url("img/hero-desktop.jpg");
         height: 250px;
         width: 100%;
         background-repeat: no-repeat;
@@ -128,7 +128,7 @@ body {
         padding-right: 0px;
         padding-top: 30px;
         width: 100%;
-        background: url("images/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+        background: url("img/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
         background-size: cover;
         text-align: center;
     }
