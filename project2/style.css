@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap');
 * {
     font-family: 'Poppins', sans-serif;
     padding: 0;
@@ -16,11 +16,118 @@
 }
 
 body {
-    background: hsl(229, 6%, 66%);
+    background: hsl(0, 0%, 99%);
+    font-size: 15px;
 }
 
 #flex-container {
-    width: 95%;
+    width: calc(100% - 40px);
     margin: auto;
     text-align: center;
+    margin-top: 50px;
+}
+
+.contbox-1 h2 {
+    color: hsl(234, 12%, 34%);
+    font-weight: 200;
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.b {
+    font-weight: 500;
+}
+
+.contbox-2 {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    padding: 10px;
+}
+
+#txt {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.incontbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.inbx {
+    margin-top: 20px;
+}
+
+.box {
+    max-width: 280px;
+    height: 180px;
+    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.boxtitle {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.boxtxt {
+    margin-bottom: 30px;
+    font-weight: 200;
+}
+
+.boximg {
+    margin-left: 220px;
+}
+
+.box-1 {
+    border-top: 5px solid hsl(180, 62%, 55%);
+    box-shadow: 2px 2px 10px 1px hsl(229, 6%, 66%);
+}
+
+.box-21 {
+    border-top: 5px solid hsl(0, 78%, 62%);
+    box-shadow: 2px 2px 10px 1px hsl(229, 6%, 66%);
+}
+
+.box-22 {
+    border-top: 5px solid hsl(34, 97%, 64%);
+    box-shadow: 2px 2px 10px 1px hsl(229, 6%, 66%);
+}
+
+.box-3 {
+    border-top: 5px solid hsl(212, 86%, 64%);
+    box-shadow: 2px 2px 10px 1px hsl(229, 6%, 66%);
+}
+
+@media only screen and (max-width: 1024px),
+only screen and (max-device-width: 1024px) {
+    .cbox {
+        flex-basis: calc(100% - 20px);
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 500px),
+only screen and (max-device-width: 500px) {
+    .contbox-1 h2 {
+        font-size: 24px;
+        font-weight: 200;
+    }
+    .txt {
+        font-size: 10px;
+        font-weight: 200;
+    }
 }
