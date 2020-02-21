@@ -66,10 +66,6 @@ nav ul li {
     color: hsl(231, 7%, 65%);
 }
 
-.login:hover {
-    color: hsl(230, 29%, 20%);
-}
-
 nav ul li a {
     font-family: 'Barlow Condensed', sans-serif;
     text-decoration: none;
@@ -115,7 +111,7 @@ header img {
     text-transform: uppercase;
     font-size: .8em;
     font-weight: 400;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 
 .flex-box1 {
@@ -124,8 +120,8 @@ header img {
 
 .flex-box1 h1 {
     text-transform: uppercase;
-    font-size: 4em;
-    /* width: 400px; */
+    font-size: 3.5em;
+    width: 500px;
     margin: 0;
 }
 
@@ -133,4 +129,5 @@ header img {
     width: 250px;
     color: hsl(230, 11%, 40%);
     font-size: 1em;
+    font-weight: 400;
 }
