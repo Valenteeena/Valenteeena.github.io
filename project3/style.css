@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Barlow', sans-serif;
+    font-size: 18px;
 }
 
 h1,
@@ -15,8 +21,9 @@ h6 {
 }
 
 #container {
-    width: calc(100% - 100px);
-    margin-left: 100px;
+    width: calc(100% - 120px);
+    margin: auto;
+    margin-right: 0;
 }
 
 header {
@@ -24,7 +31,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100px;
+    height: 150px;
     margin: 0 auto;
 }
 
@@ -94,7 +101,7 @@ header img {
 .flex-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .bluetxt {
@@ -118,11 +125,24 @@ header img {
     margin-top: 50px;
 }
 
+.boxy {
+    width: 50%;
+    /* border: 1px solid black; */
+    overflow-x: hidden;
+}
+
+.image {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
 .flex-box1 h1 {
     text-transform: uppercase;
     font-size: 3.5em;
     width: 500px;
     margin: 0;
+    margin-top: 10px;
 }
 
 .ntxt {
@@ -130,4 +150,69 @@ header img {
     color: hsl(230, 11%, 40%);
     font-size: 1em;
     font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: hsl(0, 100%, 68%);
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.bottom {
+    display: flex;
+    margin-top: 50px;
+}
+
+.ab {
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: hsl(231, 7%, 65%);
+    padding-left: 30px;
+}
+
+@media only screen and (max-width: 1440px),
+only screen and (max-device-width: 1440px) {
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 800px),
+only screen and (max-device-width:800px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    #container {
+        width: calc(100% - 20px);
+        margin: auto;
+        margin-right: 0;
+    }
+    .boxy {
+        width: 100%;
+        flex: 1;
+    }
+    .flex-box2 {
+        order: 1;
+    }
+    .flex-box1 {
+        order: 2;
+    }
 }
