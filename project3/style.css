@@ -154,7 +154,7 @@ header img {
     width: 100%;
 }
 
-.flex-box1 h1 {
+.flex-box1 h2 {
     text-transform: uppercase;
     font-size: 3.5rem;
     width: 70%;
@@ -241,7 +241,7 @@ only screen and (max-device-width:800px) {
         padding: 10px;
         padding-left: 10px;
     }
-    .flex-box1 h1 {
+    .flex-box1 h2 {
         text-transform: uppercase;
         font-size: 2.6rem;
         width: 100%;
