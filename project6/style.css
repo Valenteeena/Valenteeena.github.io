@@ -242,3 +242,14 @@ input:checked+.slider:before {
     border: 1px solid white;
     color: white;
 }
+
+@media only screen and (max-width: 800px),
+only screen and (max-device-width:800px) {
+    .CardDetails {
+        flex-wrap: wrap;
+    }
+    .card-list {
+        margin-bottom: 4rem;
+        transform: scale(1.1);
+    }
+}
