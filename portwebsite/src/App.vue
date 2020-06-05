@@ -1,28 +1,45 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <section id="container">
+      <navmenu class="box1"/>
+      <router-view class="box"></router-view>
+    </section>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import navmenu from './components/navmenu'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    navmenu
   }
 }
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+.router-link-active{
+    color:#9F6BA0;
+}
+#container{
+  display: flex;
+}
+.box{
+  height:calc(100vh - 2rem);
+  padding-top:1rem;
+  width:100%;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+*{
+margin: 0;
+padding: 0;
+font-family: 'Ubuntu', sans-serif;
 }
 </style>
