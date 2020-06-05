@@ -4,16 +4,18 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
-    color: #112d32;
+    /* color: #112d32; */
+    /* color: #17252a; */
     text-decoration: none;
 }
 
 body {
-    /* background: #eae7dc; */
+    background: #f4faf9;
+    color: #1b4948;
 }
 
 .topSpace {
-    padding-top: 4rem;
+    padding-top: 3rem;
 }
 
 .container {
@@ -89,7 +91,8 @@ svg {
 }
 
 .badge {
-    background: #112d32;
+    /* background: #112d32; */
+    background: #2b7a78;
     width: 70%;
     margin: auto;
     padding-top: .3rem;
@@ -98,25 +101,29 @@ svg {
     font-size: .9rem;
     color: white;
     margin-top: .5rem;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
     font-variant: normal;
 }
 
 .social {
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
 }
 
 .social i {
     font-size: 1.2rem;
     padding: .3rem;
+    color: #1b4948;
 }
 
 .innerbox {
-    background: #F5F8F9;
+    /* background: #F5F8F9; */
+    background: #ebf7f6;
     padding-bottom: 2rem;
     position: relative;
     z-index: 0;
     border-radius: 1.25rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 ul li {
@@ -124,7 +131,7 @@ ul li {
 }
 
 .contact {
-    padding-top: 1.5rem;
+    padding-top: 2rem;
     font-weight: 200;
 }
 
@@ -132,7 +139,7 @@ ul li {
     width: 80%;
     margin-left: 2.5rem;
     font-variant: initial;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
     font-size: 1rem;
     letter-spacing: .8px;
 }
@@ -146,11 +153,20 @@ ul li {
     margin-left: 4rem;
     padding: .7rem;
     border: none;
-    background: #112d32;
+    background: #2b7a78;
+    /* background: #112d32; */
     color: whitesmoke;
     font-size: .8rem;
     border-radius: 20px;
     margin-top: 1rem;
+    cursor: pointer;
+    transition: font-size .2s, background .2s, width .2s;
+}
+
+.btn:hover {
+    background: #1b4948;
+    font-size: .85rem;
+    width: 60.5%;
 }
 
 .btn i {
@@ -160,10 +176,9 @@ ul li {
 
 .content {
     width: 70%;
-    border: 1px solid black;
     box-shadow: 0px 40px 50px rgba(103, 118, 128, 0.1);
     margin-left: 3rem;
-    padding: 1.875rem;
+    /* padding: 1.875rem; */
     /* background: yellow; */
 }
 
@@ -183,7 +198,7 @@ ul li {
 }
 
 .circle-menu {
-    background-color: #112d32;
+    background: #2b7a78;
     border-radius: 50% 1.25rem 50% 50%;
     /* display: -webkit-flex;
     display: -ms-flexbox;
@@ -222,12 +237,17 @@ ul li {
 
 .nav a {
     color: white;
-    text-decoration: underline !important;
+    text-decoration: none;
+    transition: font-size .2s;
+}
+
+.nav a:hover {
+    font-size: 1.2rem;
 }
 
 .nav {
     color: #fff;
-    background: #112d32;
+    background: #2b7a78;
     border-radius: 2rem 0 0 2rem;
     box-shadow: 0 24px 40px rgba(48, 76, 253, 0.05), 0 8px 16px rgba(48, 76, 253, 0.05);
     display: flex;
@@ -258,6 +278,120 @@ ul li {
     opacity: 1;
 }
 
-a {
-    text-decoration: none !important;
+.title {
+    font-size: 1.7rem;
+    margin-bottom: .8rem;
+}
+
+.about a {
+    color: #2b7a78;
+    text-decoration: underline;
+}
+
+.about a:hover {
+    font-weight: 500;
+}
+
+.line {
+    background: #1b4948;
+    height: 4px;
+    width: 4rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: .8rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.upAb {
+    padding: 1.875rem;
+    padding-bottom: .5rem;
+}
+
+.pad {
+    padding: 1.875rem;
+    padding-top: 1rem;
+}
+
+.pad p {
+    font-weight: 500;
+    letter-spacing: normal;
+}
+
+.t2 {
+    border-left: 4px solid #1b4948;
+    padding-left: 1rem;
+    border-radius: 6px;
+}
+
+.flexCard {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.crd {
+    width: 11.6rem;
+    margin: .5rem;
+    padding: 1rem;
+    padding-bottom: 0;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    color: #1b4948;
+    box-shadow: 0 24px 40px rgba(27, 73, 72, 0.2), 0 8px 16px rgba(27, 73, 72, 0.2);
+    /* max-width: 10rem; */
+    background-color: white;
+    cursor: pointer;
+    transition: font-size .5s, background .5s, width .5s, color .5s;
+}
+
+.crd:hover {
+    background: #1b4948;
+    opacity: 0.5;
+    font-size: .85rem;
+    width: 11.7rem;
+    color: white;
+}
+
+.crd i {
+    font-size: 2rem;
+    margin-right: .3rem;
+    font-weight: 500;
+    float: left;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    vertical-align: baseline;
+    line-height: 2rem;
+    font-variant: small-caps;
+    font-weight: 700;
+}
+
+.card-desc {
+    font-size: .9rem;
+    font-weight: normal;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.level {
+    height: 7px;
+    width: 100%;
+    border: 1px solid #598382;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.lw {
+    background: #598382;
+    height: 100%;
+}
+
+.anim {
+    transition: width 5s;
 }

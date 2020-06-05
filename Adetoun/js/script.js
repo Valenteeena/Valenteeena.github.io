@@ -8,5 +8,10 @@ function addClass() {
     for (i = 0; i < navItem.length; i++) {
         navItem[i].classList.toggle("navItemReverse");
     }
-
 }
+// function animate(){
+//     var skills = document.querySelectorAll(".lw");
+//     for (i =0; i < skills.length; i++){
+//         skills[i].classList.add(".anim")
+//     }
+// }
