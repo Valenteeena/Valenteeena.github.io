@@ -15,7 +15,7 @@ body {
 }
 
 .topSpace {
-    padding-top: 3rem;
+    padding-top: 4rem;
 }
 
 .container {
@@ -36,12 +36,13 @@ body {
 }
 
 .sidebar .avatar {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
     transition: all .3s ease-in-out;
     display: block;
+    margin-top: -4rem;
 }
 
 .avatar--180 {
@@ -75,6 +76,8 @@ svg {
     -webkit-box-shadow: 6px 7px 26px -10px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 6px 7px 26px -10px rgba(0, 0, 0, 0.75);
     /* position: fixed; */
+    height: 60%;
+    margin-top: 2rem;
 }
 
 .hamburger.is-active .line:nth-child(2) {
@@ -302,9 +305,9 @@ ul li {
 
 p {
     margin-bottom: .8rem;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     font-weight: 400;
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 .upAb {
@@ -334,27 +337,28 @@ p {
 }
 
 .crd {
-    width: 11.6rem;
+    /* width: 11.6rem; */
     margin: .5rem;
     padding: 1rem;
     padding-bottom: 0;
-    border-top-right-radius: 20%;
-    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     color: #1b4948;
     box-shadow: 0 24px 40px rgba(27, 73, 72, 0.2), 0 8px 16px rgba(27, 73, 72, 0.2);
     /* max-width: 10rem; */
     background-color: white;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: font-size .5s, background .5s, width .5s, color .5s;
 }
 
-.crd:hover {
+
+/* .crd:hover {
     background: #1b4948;
     opacity: 0.5;
     font-size: .85rem;
     width: 11.7rem;
     color: white;
-}
+} */
 
 .crd i {
     font-size: 2rem;
