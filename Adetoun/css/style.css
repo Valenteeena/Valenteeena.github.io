@@ -307,7 +307,7 @@ p {
     margin-bottom: .8rem;
     /* letter-spacing: 1px; */
     font-weight: 400;
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 .upAb {
@@ -334,6 +334,7 @@ p {
 .flexCard {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .crd {
@@ -348,7 +349,8 @@ p {
     /* max-width: 10rem; */
     background-color: white;
     /* cursor: pointer; */
-    transition: font-size .5s, background .5s, width .5s, color .5s;
+    /* transition: font-size .5s, background .5s, width .5s, color .5s; */
+    flex-basis: 24rem;
 }
 
 
@@ -367,12 +369,20 @@ p {
     float: left;
 }
 
+.card-img {
+    /* width: 70px; */
+    width: 4rem;
+    float: left;
+    margin-right: .3rem;
+}
+
 .card-title {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     vertical-align: baseline;
-    line-height: 2rem;
+    /* line-height: 2rem; */
     font-variant: small-caps;
     font-weight: 700;
+    text-align: center;
 }
 
 .card-desc {
@@ -380,22 +390,4 @@ p {
     font-weight: normal;
     padding-top: 5px;
     text-align: center;
-}
-
-.level {
-    height: 7px;
-    width: 100%;
-    border: 1px solid #598382;
-    border-radius: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.lw {
-    background: #598382;
-    height: 100%;
-}
-
-.anim {
-    transition: width 5s;
 }
