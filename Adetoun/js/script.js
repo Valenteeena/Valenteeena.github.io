@@ -9,9 +9,29 @@ function addClass() {
         navItem[i].classList.toggle("navItemReverse");
     }
 }
-// function animate(){
-//     var skills = document.querySelectorAll(".lw");
-//     for (i =0; i < skills.length; i++){
-//         skills[i].classList.add(".anim")
-//     }
-// }
+const txts = document.querySelector('.animate-text').children;
+const txtlen = txts.length,
+    textInTimer = 3000,
+    textOutTimer = 2800;
+let ind = 0;
+
+function animate() {
+    for (let i = 0; i < txtlen; i++) {
+        txts[i].classList.remove("text-in", "text-out");
+    }
+    txts[ind].classList.add("text-in");
+
+    setTimeout(function() {
+        txts[ind].classList.add("text-out");
+    }, textOutTimer);
+
+    setTimeout(function() {
+        if (ind == txtlen - 1) {
+            ind = 0;
+        } else {
+            ind++;
+        }
+        animate();
+    }, textInTimer);
+}
+window.onload = animate;
