@@ -4,8 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
-    /* color: #112d32; */
-    /* color: #17252a; */
     text-decoration: none;
 }
 
@@ -19,13 +17,12 @@ body {
 }
 
 .container {
-    max-width: 1240px;
+    max-width: 1300px;
     margin: auto;
 }
 
 .box {
     background-color: #fff;
-    /* paddin g: 1.5rem; */
     position: relative;
     transition: box-shadow .3s ease-in-out;
     border-radius: 1.25rem;
@@ -36,7 +33,6 @@ body {
 }
 
 .sidebar .avatar {
-    /* margin-top: 2rem; */
     margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -71,11 +67,9 @@ svg {
 .sidebar {
     flex: 0 0 25%;
     max-width: 25%;
-    /* text-align: center; */
     box-shadow: 6px 7px 26px -10px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 6px 7px 26px -10px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 6px 7px 26px -10px rgba(0, 0, 0, 0.75);
-    /* position: fixed; */
     height: 60%;
     margin-top: 2rem;
 }
@@ -94,7 +88,6 @@ svg {
 }
 
 .badge {
-    /* background: #112d32; */
     background: #2b7a78;
     width: 70%;
     margin: auto;
@@ -119,7 +112,6 @@ svg {
 }
 
 .innerbox {
-    /* background: #F5F8F9; */
     background: #ebf7f6;
     padding-bottom: 2rem;
     position: relative;
@@ -157,7 +149,6 @@ ul li {
     padding: .7rem;
     border: none;
     background: #2b7a78;
-    /* background: #112d32; */
     color: whitesmoke;
     font-size: .8rem;
     border-radius: 20px;
@@ -181,8 +172,6 @@ ul li {
     width: 70%;
     box-shadow: 0px 40px 50px rgba(103, 118, 128, 0.1);
     margin-left: 3rem;
-    /* padding: 1.875rem; */
-    /* background: yellow; */
 }
 
 .hamburger .line {
@@ -224,7 +213,7 @@ html {
 }
 
 .home {
-    height: 100vh;
+    /* height: 100vh; */
     background-color: rgba(42, 121, 118, 1);
     background-blend-mode: lighten;
     background-image: url(../img/TS_Website_Design_Trends_Sept18-1200x633.jpg);

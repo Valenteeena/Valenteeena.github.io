@@ -1,0 +1,27 @@
+@media only screen and (max-width: 1024px),
+only screen and (max-device-width: 1024px) {}
+
+@media only screen and (max-width: 800px),
+only screen and (max-device-width: 800px) {
+    .home {
+        height: 100vh;
+    }
+    .homelogo {
+        width: 10rem;
+        padding-top: 2rem;
+    }
+    .innerflex h1 {
+        font-size: 6rem;
+        padding-bottom: 1rem;
+    }
+    .innerflex {
+        margin-top: 2.5rem;
+        margin-bottom: 3.5rem;
+    }
+    .animate-text {
+        font-size: 2.5rem;
+    }
+    .hm-btn {
+        width: 35%;
+    }
+}
