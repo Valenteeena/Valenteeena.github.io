@@ -1,5 +1,126 @@
-@media only screen and (max-width: 1024px),
-only screen and (max-device-width: 1024px) {}
+@media only screen and (max-width: 1024px) and (min-width: 800px),
+only screen and (max-device-width: 1024px) and (min-device-width: 800px) {
+    .homelogo {
+        width: 10rem;
+        padding-top: 2rem;
+    }
+    .home {
+        height: 100vh;
+    }
+    .innerflex h1 {
+        font-size: 6rem;
+        padding-top: 1.5rem;
+    }
+    .animate-text {
+        font-size: 3rem;
+    }
+    .hm-btn {
+        width: 35%;
+    }
+    .innerflex {
+        margin-bottom: 3.5rem;
+    }
+    .row {
+        flex-direction: row;
+    }
+    .sidebar {
+        max-width: 90%;
+        flex: 0 0 90%;
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .contact {
+        width: 65%;
+        margin: auto;
+        text-align: left;
+    }
+    .navItem {
+        margin-right: 2rem;
+    }
+    .card {
+        width: 70%;
+        margin-left: auto;
+        font-size: 1.15rem;
+    }
+    .d-btn {
+        margin: auto;
+        width: 60%;
+    }
+    .innerbox {
+        text-align: center;
+    }
+    .t2 {
+        border-right: 4px solid #1b4948;
+        width: 30%;
+        margin: auto;
+        padding-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    .content {
+        width: 90%;
+        flex: 0 0 90%;
+        margin: auto;
+    }
+    .upAb {
+        width: 100%;
+    }
+    .pad {
+        padding: .5rem;
+    }
+    .pad p {
+        font-weight: normal;
+    }
+    .crd {
+        margin: .5rem;
+        padding: .5rem;
+        flex-basis: 20.5rem;
+    }
+}
+
+@media only screen and(max-width:799px) and (min-width:400px),
+only screen and (max-device-width: 799px) and (min-device-width: 400px) {
+    body {
+        max-width: 100vw;
+    }
+    .homelogo {
+        width: 8rem;
+        padding-top: 0rem;
+    }
+    .hm-flex {
+        padding: .5rem;
+    }
+    .innerflex h1 {
+        font-size: 3.5rem;
+    }
+    .home {
+        height: 100vh;
+        width: 100vw;
+    }
+    .animate-text {
+        font-size: 3rem;
+    }
+    .hm-btn {
+        width: 35%;
+    }
+    .innerflex {
+        margin-bottom: 3.5rem;
+    }
+    .row {
+        flex-direction: row;
+    }
+}
+
+
+/* @media only screen and (max-device-width: 480px) {
+    .homelogo {
+        width: 5rem;
+    }
+    .innerflex h1 {
+        font-size: 4rem;
+    }
+}
+@media (max-width:799px) and (min-width:400px)
 
 @media only screen and (max-width: 800px),
 only screen and (max-device-width: 800px) {
@@ -24,4 +145,4 @@ only screen and (max-device-width: 800px) {
     .hm-btn {
         width: 35%;
     }
-}
+} */

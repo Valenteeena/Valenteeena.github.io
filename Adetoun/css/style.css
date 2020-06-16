@@ -464,7 +464,6 @@ p {
 }
 
 .crd {
-    /* width: 11.6rem; */
     margin: .5rem;
     padding: 1rem;
     padding-bottom: 0;
@@ -472,10 +471,7 @@ p {
     border-bottom-left-radius: 20px;
     color: #1b4948;
     box-shadow: 0 24px 40px rgba(27, 73, 72, 0.2), 0 8px 16px rgba(27, 73, 72, 0.2);
-    /* max-width: 10rem; */
     background-color: white;
-    /* cursor: pointer; */
-    /* transition: font-size .5s, background .5s, width .5s, color .5s; */
     flex-basis: 24rem;
 }
 
