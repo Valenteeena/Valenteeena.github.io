@@ -96,7 +96,7 @@ only screen and (max-device-width: 799px) and (min-device-width: 400px) {
         letter-spacing: normal;
     }
     .home {
-        height: 100vh;
+        height: 100%;
         width: 100vw;
     }
     .animate-text {
