@@ -122,12 +122,20 @@ only screen and (max-device-width: 799px) and (min-device-width: 400px) {
     .row {
         flex-direction: row;
     }
+    .hm-lnk-abt img {
+        margin-top: 0;
+    }
     .sidebar {
         max-width: 90%;
         flex: 0 0 90%;
         margin: auto;
         margin-top: 2rem;
         margin-bottom: 2rem;
+    }
+    .content {
+        width: 90%;
+        flex: 0 0 90%;
+        margin: auto;
     }
 }
 
