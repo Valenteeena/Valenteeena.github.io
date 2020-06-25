@@ -213,7 +213,7 @@ html {
 }
 
 .home {
-    /* height: 100vh; */
+    height: 100vh;
     background-color: rgba(42, 121, 118, 1);
     background-blend-mode: lighten;
     background-image: url(../img/TS_Website_Design_Trends_Sept18-1200x633.jpg);
