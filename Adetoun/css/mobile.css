@@ -29,6 +29,7 @@ only screen and (max-device-width: 1024px) and (min-device-width: 800px) {
         margin: auto;
         margin-top: 2rem;
         margin-bottom: 2rem;
+        position: static;
     }
     .contact {
         width: 65%;
@@ -57,7 +58,8 @@ only screen and (max-device-width: 1024px) and (min-device-width: 800px) {
         padding-right: 1rem;
         margin-bottom: 1rem;
     }
-    .content {
+    .content,
+    .proj {
         width: 90%;
         flex: 0 0 90%;
         margin: auto;
@@ -131,11 +133,26 @@ only screen and (max-device-width: 799px) and (min-device-width: 400px) {
         margin: auto;
         margin-top: 2rem;
         margin-bottom: 2rem;
+        position: static;
     }
     .content {
         width: 90%;
         flex: 0 0 90%;
         margin: auto;
+    }
+    .proj {
+        width: 90%;
+        margin: 0;
+        margin-left: 1rem;
+        position: relative;
+        left: 0;
+        margin-top: 2rem;
+        /* padding: 1.875rem; */
+    }
+    .prjcrd {
+        flex-basis: 15rem;
+        width: 15rem;
+        height: 11rem;
     }
 }
 
