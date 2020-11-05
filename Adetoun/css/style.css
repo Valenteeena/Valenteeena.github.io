@@ -539,14 +539,13 @@ p {
     background-image: url('../img/apin.JPG');
 }
 
-
-/* .p7 {
+.p7 {
     background-image: url('../img/invest.JPG');
-} */
+}
 
 figcaption {
     /* position: relative; */
-    padding-top: 30%;
+    padding-top: 25%;
     background: hsla(179, 46%, 20%, 0.8);
     height: 100%;
     /* -webkit-transform: translateY(-50%);
@@ -572,6 +571,11 @@ figcaption h4 {
 figcaption p {
     transform: translateY(100%);
     transition: ease .6s;
+}
+
+figcaption i {
+    font-size: .9rem;
+    color: #97cec8;
 }
 
 figcaption:hover h4 {
