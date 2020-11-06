@@ -150,9 +150,24 @@ only screen and (max-device-width: 799px) and (min-device-width: 400px) {
         /* padding: 1.875rem; */
     }
     .prjcrd {
-        flex-basis: 15rem;
-        width: 15rem;
-        height: 11rem;
+        flex-basis: 90%;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 1.5rem;
+        margin-top: .5rem;
+        background-size: cover;
+        /* background-blend-mode: hard-light; */
+    }
+    figcaption {
+        padding-top: 15%;
+        opacity: 1;
+        background: hsla(179, 46%, 20%, 0.8);
+    }
+    .crd {
+        margin: auto;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        flex-basis: 85%;
     }
 }
 
