@@ -64,6 +64,16 @@ only screen and (max-device-width: 1024px) and (min-device-width: 800px) {
         flex: 0 0 90%;
         margin: auto;
     }
+    .proj {
+        position: relative;
+        left: 0;
+        margin-top: 2rem;
+    }
+    .prjcrd {
+        margin: auto;
+        margin-bottom: 1.5rem;
+        margin-top: .5rem;
+    }
     .upAb {
         width: 100%;
     }
@@ -76,12 +86,15 @@ only screen and (max-device-width: 1024px) and (min-device-width: 800px) {
     .crd {
         margin: .5rem;
         padding: .5rem;
-        flex-basis: 20.5rem;
+        margin: auto;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        flex-basis: 85%;
     }
 }
 
-@media only screen and(max-width:799px) and (min-width:400px),
-only screen and (max-device-width: 799px) and (min-device-width: 400px) {
+@media only screen and(max-width:799px),
+only screen and (max-device-width: 799px) {
     body {
         max-width: 100vw;
     }
@@ -147,7 +160,6 @@ only screen and (max-device-width: 799px) and (min-device-width: 400px) {
         position: relative;
         left: 0;
         margin-top: 2rem;
-        /* padding: 1.875rem; */
     }
     .prjcrd {
         flex-basis: 90%;
@@ -156,12 +168,9 @@ only screen and (max-device-width: 799px) and (min-device-width: 400px) {
         margin-bottom: 1.5rem;
         margin-top: .5rem;
         background-size: cover;
-        /* background-blend-mode: hard-light; */
     }
     figcaption {
         padding-top: 15%;
-        opacity: 1;
-        background: hsla(179, 46%, 20%, 0.8);
     }
     .crd {
         margin: auto;
@@ -169,10 +178,12 @@ only screen and (max-device-width: 799px) and (min-device-width: 400px) {
         margin-bottom: .5rem;
         flex-basis: 85%;
     }
+    figcaption i {
+        font-size: .65rem;
+    }
 }
 
-
-/* @media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 480px) {
     .homelogo {
         width: 5rem;
     }
@@ -180,29 +191,3 @@ only screen and (max-device-width: 799px) and (min-device-width: 400px) {
         font-size: 4rem;
     }
 }
-@media (max-width:799px) and (min-width:400px)
-
-@media only screen and (max-width: 800px),
-only screen and (max-device-width: 800px) {
-    .home {
-        height: 100vh;
-    }
-    .homelogo {
-        width: 10rem;
-        padding-top: 2rem;
-    }
-    .innerflex h1 {
-        font-size: 6rem;
-        padding-bottom: 1rem;
-    }
-    .innerflex {
-        margin-top: 2.5rem;
-        margin-bottom: 3.5rem;
-    }
-    .animate-text {
-        font-size: 2.5rem;
-    }
-    .hm-btn {
-        width: 35%;
-    }
-} */
