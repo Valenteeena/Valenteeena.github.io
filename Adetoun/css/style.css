@@ -16,6 +16,12 @@ body {
     padding-top: 4rem;
 }
 
+.sticky-nav {
+    position: sticky;
+    top: 10rem;
+    z-index: 1;
+}
+
 .container {
     max-width: 1300px;
     margin: auto;

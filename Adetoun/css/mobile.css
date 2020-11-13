@@ -181,6 +181,29 @@ only screen and (max-device-width: 799px) {
     figcaption i {
         font-size: .65rem;
     }
+    .sticky-nav {
+        position: fixed;
+        top: 10vh;
+        left: 95vw;
+        z-index: 1;
+    }
+    .inner-menu {
+        position: fixed;
+        top: 10vh;
+        right: 5vh;
+        width: 90%;
+        height: 80%;
+        padding-right: 10px;
+    }
+    .nav {
+        background-color: rgba(43, 122, 120, .8);
+        border-radius: .5rem;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .navItem {
+        flex-basis: 100%;
+    }
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -190,4 +213,11 @@ only screen and (max-device-width: 799px) {
     .innerflex h1 {
         font-size: 4rem;
     }
+}
+
+@media only screen and (max-device-width: 600px) {
+    .nav {
+        border-radius: .5rem;
+    }
+    .inner-menu {}
 }
