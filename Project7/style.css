@@ -10,8 +10,118 @@
 body{
     color: var(--darkblue);
     font-family: 'Inter', sans-serif;
+    max-width: 1440px;
+    margin: auto;
+    background-image: url("images/pattern-curve.svg");
+    background-repeat: no-repeat;
+    background-position-y:100% ;
 
 }
+.container{
+    max-width:80%;
+    margin: auto;
+    overflow-y: hidden;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    max-height: 550px;
+}
+.testi{
+    max-width: 100%;
+    /* display:flex; */
+    margin-top: 4rem;
+    height: 100vh;
+    opacity: 0;
+    transition: transform .5s, opacity .5s ;
+}
+.t-text{
+    /* position: absolute; */
+    background-image: url('images/pattern-quotes.svg');
+    background-repeat: no-repeat;
+    line-height: 2.5rem;
+    background-position-x: 6rem;
+    width:58%;
+    margin-top: 6rem;
+}
+.t-text p{
+    left: 3rem;
+    padding-top: 4rem;
+    font-size: 30px;
+    font-weight: 300;
+}
+.t-img{
+    float:right;
+    background-image: url('images/pattern-bg.svg');
+    padding: 3rem;
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position-y: 90;
+    position: absolute;
+    top:4rem;
+    right: 12%;
+    z-index: -200;
+    border-radius: 5px;
+}
+.hero-img{
+    width: 450px;
+    border-radius: 5px;
+}
+.btnArrow{
+    clear: both;
+    position: absolute;
+    top: 540px;
+    left: 55%;
+    -webkit-box-shadow: -5px 2px 17px -5px rgba(0,0,0,0.5);
+    -moz-box-shadow: -5px 2px 17px -5px rgba(0,0,0,0.5);
+    box-shadow: -5px 2px 17px -5px rgba(0,0,0,0.5);
+    border-radius:20rem;
+    overflow: hidden;
+}
+.l-arr, .r-arr{
+    background-color: white;
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-size:25%;
+    background-position:center;
+    border:none;
+    margin: none;
+    padding: 1rem 0;
 
-.attribution { font-size: 11px; text-align: center; }
+}
+.l-arr{
+    background-image: url('images/icon-prev.svg');
+}
+.r-arr{
+    background-image: url('images/icon-next.svg');
+}
+.hero-name{
+    display: flex;
+    margin-top: 1.3rem;
+}
+.hero-name h4{
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding-right: 5px;
+}
+.hero-name h5{
+    font-weight: 200;
+    color: var(--grayishblue);
+    font-size: 1.2rem;
+}
+
+.hide{
+    display: none;
+    transform: (translateX(-100%));
+    opacity: 0;
+}
+
+.show{
+    /* display: flexbox; */
+    transform: (translateX(100%));
+    opacity: 1;
+}
+
+
+.attribution { font-size: 11px; text-align: center; 
+clear: both;}
 .attribution a { color: hsl(228, 45%, 44%); }
