@@ -41,6 +41,7 @@ body{
     background-position-x: 6rem;
     width:58%;
     margin-top: 6rem;
+    background-size: 18%;
 }
 .t-text p{
     left: 3rem;
@@ -125,3 +126,55 @@ body{
 .attribution { font-size: 11px; text-align: center; 
 clear: both;}
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 400px),
+only screen and (max-device-width: 400px){
+    .container{
+    max-width: 90%;
+    background-size: 20rem;
+    }
+    .testi{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+.t-img{
+    margin: auto;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    clear: both;
+    margin: auto;
+    display: flexbox;
+}
+.hero-img{
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+.t-text{
+    position: absolute;
+    top: 59%;
+    width: 90%;
+    margin: auto;
+    line-height: 1.5rem;
+    text-align: center;
+    background-position-x: 50%;
+
+}
+.t-text p{
+    font-size: 1.2rem;
+    padding-top: 2rem;
+
+}
+.btnArrow{
+    top: 47%;
+    left: 40%;
+}
+.hero-name{
+    flex-direction: column;
+    padding-top: 1.5rem;
+}
+body{
+    background-size: 80%;
+}
+}
