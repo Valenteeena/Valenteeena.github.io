@@ -548,7 +548,9 @@ p {
 .p7 {
     background-image: url('../img/invest.JPG');
 }
-
+.p8{
+    background-image: url('../img/p8.JPG');
+}
 figcaption {
     /* position: relative; */
     padding-top: 25%;
