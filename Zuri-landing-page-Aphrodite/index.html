@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Zuri Landing Page</title>
+</head>
+<body>
+    <header>
+        <img src="img/Zuri & i4G Logo 1.png" alt="logo">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#track">Track</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li><a href="#register" class="reg">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="hero-section">
+        <div class="hero-text">
+            <h1>Break into tech with the needed skill set.</h1>
+            <p>Motivated by the need for emerging developers and designers to create lasting solutions to global challenges, the Zuri & Ingressive 4 Good internship is a 4 months remote training where interns are exposed to the tech world. The interns select their choice field and get to learn from professionals who put them through the basics via tutorials, live projects and career mentorship.</p>
+        </div>
+        <div class="hero-img">
+            <img src="img/hero-img.png" alt="track-icons">
+        </div>
+    </div>
+    <div id="track">
+        <h4>Track</h4>
+        <p>The internship will cover the following areas</p>
+        <div class="track-cen">
+        <div class="flex-track">
+            <div>
+                <h5>Design</h5>
+                <h6>UI/UX</h6>
+                <p>This track deals with creating interface for websites or mobile applications. Using Figma, interns will be taught on how to convert project documentation into viewable and understandable graphic design for the developers to work with.</p>
+            </div>
+            <div>
+                <h5>Front-End Web Development</h5>
+                <h6>HTML | CSS | Javascript</h6>
+                <p>This track deals with coding the part of the website or mobile application that users interact with. The front-end developer intern will be taught on how to  correctly interpret a given user interface design to reproduce a perfect application.</p>
+            </div>
+        </div>
+        <div class="flex-track">
+            <div>
+                <h5>Back-End Web Development</h5>
+                <h6>PHP | Python | JavaScript</h6>
+                <p>This track deals with the aspect of the website application the user does not directly interact with. It allows the frontend function either by running some back-end code or connecting to the database.</p>
+            </div>
+    
+            <div>
+                <h5>Mobile Development</h5>
+                <h6>Java | Flutter | Kotlin</h6>
+                <p>The mobile development track contains of a a list of tools and languages needed for a developer to create mobile applications. The mobile application interns will be taught to develop, are either IOS or Android apps.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="testimonial">
+        <h4>TESTIMONIALS</h4>
+        <p>Here's what our previous interns have to say</p>
+        
+        <div class="carousel-slider">
+            <div class="img-div fade">
+                <div class="img1 img-slide">
+                    <img src="img/toun.png" alt="toun"/>
+                    <p class="test-c">Being a part of the previous cohort was one of the best thing that has ever happened to me. I came into tech with no idea. Thanks to the awesome mentors and drilling tasks, i now work as a remote tech bros in one of the fintech companies overseas.</p>
+                    
+                    <h6>Adetoun Olayemi</h6>
+                    <p class="test-p">Front-end Track | TM - Aphrodite</p>
+                </div>
+
+                <div class="img2 img-slide">
+                    <img src="img/oyin.png" alt="oyinkan"/>
+                    <p class="test-c">The summary of my experience is that it was stress filled but worth every moment. I remember the charge from the onset and that was what kept me going. I can boldly say today that it all paid off. I’d recomment Zuri & I4G anytime anyday.</p>
+                    
+                    <h6>Oyinkansola Olunaike</h6>
+                    <p class="test-p">Design Track | TM - Aphrodite</p>
+                </div>
+            </div>
+            <div class="img-div fade">
+                <div class="img3 img-slide">
+                    <img src="img/josh.png" alt="joshua"/>
+                    <p class="test-c">Being a part of the previous cohort was one of the best thing that has ever happened to me. I came into tech with no idea. Thanks to the awesome mentors and drilling tasks, i now work as a remote tech bros in one of the fintech companies overseas.</p>
+                    
+                    <h6>Joshua Adegbite</h6>
+                    <p class="test-p">Design Track | TM - Aphrodite</p>
+                </div>
+
+                <div class="img4 img-slide">
+                    <img src="img/adewunmi.png" alt="adewunmi"/>
+                    <p class="test-c">The summary of my experience is that it was stress filled but worth every moment. I remember the charge from the onset and that was what kept me going. I can boldly say today that it all paid off. I’d recomment Zuri & I4G anytime anyday.</p>
+                    
+                    <h6>Adenrele Adewunmi</h6>
+                    <p class="test-p">Front-End | ATL - Aphrodite</p>
+                </div>
+            </div>
+            <div class="dots">
+                <div class="dot active" onclick="currentSlide(1)"></div>
+                <div class="dot" onclick="currentSlide(2)"></div>
+            </div>
+        </div>
+    </div>
+    <div id="register">
+        <h4>What to get started in tech? <span class="highlight"> Apply here </span></h4>
+        <p>Fill in your details stating why you want to be part of our next cohort. We will review and get back to you ASAP!</p>
+
+        <Form>
+            <div id="reg-form">
+                <div class="firstname r-element">
+                    <label>First Name</label><br>
+                    <input type="text" placeholder="Enter your first name">
+                </div>
+
+                <div class="lastname r-element">
+                    <label>Last Name</label><br>
+                    <input type="text" placeholder="Enter your last name">            
+                </div>
+
+                <div class="email r-element">
+                    <label>Email Address</label><br>
+                    <input type="email" placeholder="Enter your email address">
+                </div>
+
+                <div class="phone r-element">
+                    <label>Phone Number</label><br>
+                    <input type="text" placeholder="Enter your phone number">
+                </div>
+
+                <div class="gender r-element">
+                    <label>Gender</label><br>
+                    <select>
+                        <option>Select Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Others</option>
+                    </select>
+                </div>
+
+                <div class="country r-element">
+                    <label>Country</label><br>
+                    <select>
+                        <option>Select Country</option>
+                        <option>Nigeria</option>
+                        <option>South Africa</option>
+                        <option>Ghana</option>
+                        <option>Togo</option>
+                        <option>Senegal</option>
+                        <option>Sierra Leone</option>
+                        <option>Others</option>
+                    </select>
+                </div>
+
+                <div class="track r-element">
+                    <label>Track</label><br>
+                    <select>
+                        <option>Choose Track</option>
+                        <option>Design</option>
+                        <option>Front - end Web Development</option>
+                        <option>Back - end Web Development</option>
+                        <option>Mobile Development</option>
+                    </select>
+                </div>
+
+                <div class="experience r-element">
+                    <label>Experience Level</label><br>
+                    <select>
+                        <option>Select tech experience level</option>
+                        <option>Beginners</option>
+                        <option>Intermediate</option>
+                        <option>Professional</option>
+                    </select>
+                </div>
+
+                <div class="education r-element">
+                    <label>Educational Level</label><br>
+                    <select>
+                        <option>Select educational level</option>
+                        <option>SSCE</option>
+                        <option>Undergraduate</option>
+                        <option>Graduate</option>
+                    </select>
+                </div>
+
+                <div class="employment r-element">
+                    <label>Employment Status</label><br>
+                    <select>
+                        <option>Select employment status</option>
+                        <option>Unemployed</option>
+                        <option>Self Employed</option>
+                        <option>Employed</option>
+                    </select>
+                </div>
+
+                <div class="why">
+                    <label>Why do you want to be part of this cohort? (Expalin in one sentence)</label><br>
+                    <textarea rows="3" cols="3"></textarea>
+                </div>
+            </div>
+            <button>Register</button>
+        </form>
+    </div>
+    <footer id="footer">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero-section">About Zuri & I4G</a></li>
+                <li><a href="#hero-section">Terms and Conditions</a></li>
+                <li><a href="#hero-section">Contact Us</a></li>
+                <li><a href="#hero-section">&copy; 2021 Zuri & I4G</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
