@@ -187,15 +187,10 @@ ul li {
 }
 
 .proj {
-    /* align-self: baseline; */
     left: 20rem;
-    /* position: sticky; */
     margin-top: 2rem;
-    /* position: sticky; */
     bottom: 1rem;
-    /* align-self: flex-end; */
-    /* position: -webkit-sticky; */
-    /* top: 2rem; */
+
 }
 
 .hamburger .line {
@@ -220,12 +215,7 @@ html {
 .circle-menu {
     background: #2b7a78;
     border-radius: 50% 1.25rem 50% 50%;
-    /* display: -webkit-flex;
-    display: -ms-flexbox;
-    display: -moz-box; */
     display: flex;
-    /* -webkit-align-items: center;
-    -ms-flex-align: center; */
     align-items: center;
     justify-content: center;
     height: 3rem;
@@ -234,7 +224,6 @@ html {
     right: 0;
     width: 3rem;
     z-index: 2;
-    /* position: sticky; */
 }
 
 .home {
@@ -257,7 +246,6 @@ html {
 }
 
 .hm-flex {
-    /* background-color: rgba(29, 66, 64, 0.253); */
     top: 0px;
     left: 0px;
     width: 100%;
@@ -372,9 +360,6 @@ html {
 }
 
 .inner-menu {
-    /* display: -webkit-flex;
-    display: -ms-flexbox;
-    display: -moz-box; */
     display: flex;
     justify-content: flex-end;
     height: 3rem;
@@ -453,7 +438,6 @@ html {
 
 p {
     margin-bottom: .8rem;
-    /* letter-spacing: 1px; */
     font-weight: 400;
     font-size: 1rem;
 }
@@ -507,7 +491,6 @@ p {
 
 .prjcrd {
     margin: .5rem;
-    /* padding: .5rem; */
     margin-bottom: 1.5rem;
     flex-basis: 25rem;
     background-blend-mode: overlay;
@@ -551,14 +534,16 @@ p {
 .p8{
     background-image: url('../img/p8.JPG');
 }
+.p9{
+    background-image: url('../img/Vendor\ Home\ Page.png');
+}
+.p10{
+    background-image: url('../img/p10.JPG');
+}
 figcaption {
-    /* position: relative; */
     padding-top: 25%;
     background: hsla(179, 46%, 20%, 0.8);
     height: 100%;
-    /* -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); */
     color: #fff;
     transition: ease .5s;
     opacity: 0;
@@ -593,21 +578,6 @@ figcaption:hover h4 {
 figcaption:hover p {
     transform: translateY(20%);
 }
-
-
-/* .transt {
-    height: 80%;
-    width: 100%;
-    transition: ease 1s;
-    background-color: red;
-    transform: translateY(-40%);
-    padding-top: 20%;
-}
-
-.transt:hover {
-    transform: translateY(5%);
-} */
-
 .crd i {
     font-size: 2rem;
     margin-right: .3rem;
@@ -616,7 +586,6 @@ figcaption:hover p {
 }
 
 .card-img {
-    /* width: 70px; */
     width: 4rem;
     float: left;
     margin-right: .3rem;
@@ -625,7 +594,6 @@ figcaption:hover p {
 .card-title {
     font-size: 1.25rem;
     vertical-align: baseline;
-    /* line-height: 2rem; */
     font-variant: small-caps;
     font-weight: 700;
     text-align: center;
