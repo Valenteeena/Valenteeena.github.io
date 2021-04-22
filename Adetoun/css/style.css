@@ -540,6 +540,12 @@ p {
 .p10{
     background-image: url('../img/p10.JPG');
 }
+.p11{
+    background-image: url('../img/pform.JPG');
+}
+.p12{
+    background-image: url('../img/zuriL.JPG');
+}
 figcaption {
     padding-top: 25%;
     background: hsla(179, 46%, 20%, 0.8);
