@@ -15,7 +15,8 @@ function convertFahrToCelsius(fahr) {
         return msg;
 
     } else if (isNaN(fahr)) {
-        msg = fahr + ' is not a number but a/an ' + typeof(fahr);
+        fahrA = JSON.stringify(fahr);
+        msg = fahrA + ' is not a number but a/an ' + typeof(fahr);
         console.log(msg);
         return msg;
     }
