@@ -9,13 +9,13 @@ function convertFahrToCelsius(fahr) {
         return msg;
 
     }else if (Array.isArray(fahr)){
-        fahrA = JSON.stringify(fahr)
+        let fahrA = JSON.stringify(fahr)
         msg = fahrA + ' is not a number but a/an array';
         console.log(msg);
         return msg;
 
     } else if (isNaN(fahr)) {
-        fahrA = JSON.stringify(fahr);
+        let fahrA = JSON.stringify(fahr);
         msg = fahrA + ' is not a number but a/an ' + typeof(fahr);
         console.log(msg);
         return msg;
@@ -24,8 +24,8 @@ function convertFahrToCelsius(fahr) {
     //Coversion formula
     else{
         //convert to number
-        var cFahr = Number(fahr);
-        var celc = ((cFahr - 32) * (5 / 9)).toFixed(4);
+        let cFahr = Number(fahr);
+        let celc = ((cFahr - 32) * (5 / 9)).toFixed(4);
         console.log(celc);
         return celc;
     }
@@ -51,7 +51,7 @@ function checkYuGiOh(num) {
     }
 
     //convert to Number
-    var val = Number(num);
+    let val = Number(num);
     
     //yu-gi-oh algorithm
     for (let i = 1; i < val + 1; i++) {
