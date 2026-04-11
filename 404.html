@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Page Not Found | Adetoun Olayemi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="Adetoun/img/logo 2.png" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Ubuntu', sans-serif;
+      background: #f4faf9;
+      color: #1b4948;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .logo {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #1b4948;
+      text-decoration: none;
+      margin-bottom: 3rem;
+    }
+    .logo span { color: #3da8a5; }
+    .code {
+      font-size: clamp(6rem, 20vw, 10rem);
+      font-weight: 700;
+      color: #2b7a78;
+      line-height: 1;
+      opacity: 0.15;
+      position: absolute;
+      user-select: none;
+    }
+    .content { position: relative; z-index: 1; }
+    h1 {
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #1b4948;
+    }
+    p {
+      font-size: 1rem;
+      color: #5a8a88;
+      max-width: 420px;
+      line-height: 1.7;
+      margin-bottom: 36px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      background: #2b7a78;
+      color: #fff;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .btn:hover { background: #1b4948; transform: translateY(-2px); }
+  </style>
+</head>
+<body>
+  <a href="/" class="logo">Adetoun<span>.</span></a>
+  <div class="code">404</div>
+  <div class="content">
+    <h1>Page Not Found</h1>
+    <p>Looks like this page took a wrong turn. Let's get you back to something that actually works.</p>
+    <a href="/" class="btn">← Back to Portfolio</a>
+  </div>
+</body>
+</html>
