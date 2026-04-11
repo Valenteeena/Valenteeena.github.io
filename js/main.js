@@ -13,17 +13,32 @@ window.addEventListener('scroll', () => {
   setActiveNavLink();
 });
 
+function openMenu() {
+  hamburger.classList.add('open');
+  navLinks.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeMenu() {
+  hamburger.classList.remove('open');
+  navLinks.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
 hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('open');
-  navLinks.classList.toggle('open');
+  navLinks.classList.contains('open') ? closeMenu() : openMenu();
 });
 
-// Close mobile menu on link click
+const navClose = document.getElementById('navClose');
+if (navClose) navClose.addEventListener('click', closeMenu);
+
+// Close on link click
 navLinks.querySelectorAll('.nav-link, .nav-cta').forEach(link => {
-  link.addEventListener('click', () => {
-    hamburger.classList.remove('open');
-    navLinks.classList.remove('open');
-  });
+  link.addEventListener('click', closeMenu);
+});
+
+// Close on overlay background click
+navLinks.addEventListener('click', (e) => {
+  if (e.target === navLinks) closeMenu();
 });
 
 /* ---------- ACTIVE NAV LINK ON SCROLL ---------- */
@@ -35,7 +50,7 @@ function setActiveNavLink() {
     const top    = section.offsetTop;
     const height = section.offsetHeight;
     const id     = section.getAttribute('id');
-    const link   = document.querySelector(`.nav-link[href="#${id}"]`);
+    const link   = document.querySelector(`.nav-desktop .nav-link[href="#${id}"]`);
     if (!link) return;
     link.classList.toggle('active', scrollY >= top && scrollY < top + height);
   });
