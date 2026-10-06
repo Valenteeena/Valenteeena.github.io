@@ -448,6 +448,19 @@ button { cursor: pointer; font-family: inherit; }
   z-index: 1;
 }
 
+/* Light mode: the photo is pale (white outfit, light backdrop), so back it
+   with a solid teal arch and a white edge to make it stand out from the cream page */
+html:not([data-theme="dark"]) .hero-photo-ring {
+  background: linear-gradient(160deg, var(--clr-light), var(--clr-mid));
+  border: 0;
+  opacity: 1;
+  inset: -16px -16px 16px 16px;
+}
+html:not([data-theme="dark"]) .hero-photo {
+  border: 4px solid #ffffff;
+  box-shadow: 0 24px 50px -22px rgba(19, 33, 31, 0.5);
+}
+
 /* Floating badges */
 .hero-badge {
   position: absolute;
@@ -818,10 +831,20 @@ button { cursor: pointer; font-family: inherit; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.65;
-  transition: var(--transition);
+  object-position: top center;
+  transition: transform 0.5s ease;
 }
-.proj-card:hover .proj-screenshot { opacity: 0.85; }
+.proj-card:hover .proj-screenshot { transform: scale(1.04); }
+
+/* icon shown on gradient when a project has no public screenshot */
+.proj-glyph {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.85);
+}
 
 .proj-badge {
   position: absolute;
