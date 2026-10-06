@@ -58,7 +58,7 @@ function setActiveNavLink() {
 
 /* ---------- ROLE TEXT ANIMATION ---------- */
 const roles = [
-  'Senior Frontend Engineer',
+  'Lead Frontend Engineer',
   'Technical Trainer',
   '"Code meets design"',
   'React & TypeScript Expert',
@@ -191,7 +191,8 @@ const themeIcon   = document.getElementById('themeIcon');
 const html        = document.documentElement;
 
 // Restore saved preference
-const savedTheme = localStorage.getItem('theme') || 'light';
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+const savedTheme = localStorage.getItem('theme') || (prefersDark ? 'dark' : 'light');
 html.setAttribute('data-theme', savedTheme);
 themeIcon.className = savedTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
 
